@@ -9,3 +9,7 @@
 ## [0.0.3]
 
 * naming 
+
+## [0.0.4]
+
+* bloc loading add

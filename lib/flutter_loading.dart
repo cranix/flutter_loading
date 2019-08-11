@@ -46,6 +46,16 @@ class LoadingBloc {
   hideLoading() {
     _loadingController.add(false);
   }
+
+
+  loading(Future f) async {
+    showLoading();
+    try {
+      return await f;
+    } finally {
+      hideLoading();
+    }
+  }
 }
 
 mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
@@ -57,13 +67,8 @@ mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
     super.dispose();
   }
 
-  loading(Future f) async {
-    loadingBloc.showLoading();
-    try {
-      return await f;
-    } finally {
-      loadingBloc.hideLoading();
-    }
+  loading(Future f) {
+    return loadingBloc.loading(f);
   }
 
   Widget buildLoadingBody() {
