@@ -60,7 +60,7 @@ mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
   loading(Future f) async {
     loadingBloc.showLoading();
     try {
-      await f;
+      return await f;
     } finally {
       loadingBloc.hideLoading();
     }
