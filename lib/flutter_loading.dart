@@ -4,7 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-Widget flutterLoadingContainer(
+Widget buildFlutterLoadingContainer(
     {@required Widget child,
     @required LoadingBloc loadingBloc,
     Widget loadingBody}) {
@@ -66,7 +66,7 @@ mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
     }
   }
 
-  Widget loadingBody() {
+  Widget buildLoadingBody() {
     return Container(
       color: Colors.black45,
       child: Center(
@@ -75,8 +75,8 @@ mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
     );
   }
 
-  Widget loadingContainer({@required Widget child}) {
-    return flutterLoadingContainer(
-        child: child, loadingBloc: loadingBloc, loadingBody: loadingBody());
+  Widget buildLoadingContainer({@required Widget child}) {
+    return buildFlutterLoadingContainer(
+        child: child, loadingBloc: loadingBloc, loadingBody: buildLoadingBody());
   }
 }

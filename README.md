@@ -5,7 +5,7 @@ easy use loading
 ## Getting Started
 
 1. mixin LoadingStateMixin 
-2. target loadingContainer
+2. target buildLoadingContainer
 3. action loading(future)
 
 ## example
@@ -16,6 +16,7 @@ import 'package:flutter_loading/flutter_loading.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -54,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> with LoadingStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return loadingContainer(
+    return buildLoadingContainer(
       child: Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
@@ -82,5 +83,6 @@ class _MyHomePageState extends State<MyHomePage> with LoadingStateMixin {
     );
   }
 }
+
 
 ```
