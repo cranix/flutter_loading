@@ -21,3 +21,7 @@
 ## [0.0.6]
 
 * example add
+
+## [0.1.0]
+
+* formatting
