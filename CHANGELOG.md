@@ -17,3 +17,7 @@
 ## [0.0.5]
 
 * controller & widget refectoring
+
+## [0.0.6]
+
+* example add

@@ -1,6 +1,6 @@
 name: flutter_loading
-description: flutter loading
-version: 0.0.5
+description: You can easily configure the loading screen using Future.
+version: 0.0.6
 author: cranix <cranix@cranix.net>
 homepage: https://github.com/cranix/flutter_loading
 
