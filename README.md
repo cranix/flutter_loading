@@ -1,6 +1,6 @@
 # flutter_loading
 
-easy use loading 
+You can easily configure the loading screen using Future.
 
 ## Getting Started
 
