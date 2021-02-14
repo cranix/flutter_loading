@@ -10,10 +10,16 @@ class LoadingController {
   }
 
   showLoading() {
+    if (_loadingController.isClosed) {
+      return;
+    }
     _loadingController.add(true);
   }
 
   hideLoading() {
+    if (_loadingController.isClosed) {
+      return;
+    }
     _loadingController.add(false);
   }
 
