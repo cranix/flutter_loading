@@ -1,7 +1,7 @@
 import 'dart:async';
 
 class LoadingController {
-  final StreamController<bool> _loadingController = StreamController();
+  final StreamController<bool> _loadingController = StreamController.broadcast();
 
   Stream<bool> get loadingStream => _loadingController.stream;
 
