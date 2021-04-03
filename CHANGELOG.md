@@ -25,3 +25,11 @@
 ## [0.1.0]
 
 * formatting
+
+## [0.1.2]
+
+* bug fix
+
+## [0.2.0]
+
+* null safety

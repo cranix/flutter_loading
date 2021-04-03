@@ -29,7 +29,7 @@ mixin LoadingStateMixin<T extends StatefulWidget> on State<T> {
     );
   }
 
-  LoadingContainer buildLoadingContainer({@required Widget child}) {
+  LoadingContainer buildLoadingContainer({required Widget child}) {
     return LoadingContainer(
         child: child,
         controller: loadingController,
