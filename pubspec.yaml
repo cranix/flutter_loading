@@ -1,10 +1,10 @@
 name: flutter_loading
 description: You can easily configure the loading screen using Future.
-version: 0.2.0
+version: 0.3.0
 homepage: https://github.com/cranix/flutter_loading
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ^3.0.0
 
 dependencies:
   flutter:
